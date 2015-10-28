@@ -3,9 +3,13 @@
 \usepackage{graphicx}
 
 \begin{document}
+
+Malte Siemers\\
+Martin Lundfall\\
+Henri Bunting\\
 \section*{2.1}
 \subsection*{a}
-A nonlinear transfer function gives the neural network a universal property: Given enough layers and neurons, the network can model any function within a certain accuracy. In a network with a linear transfer function we can only compute a linear function. A network with a linear transfer function of $n$ layers will always be equivalent to a network with only one layer: linear functions can always be concatinated.\\
+A nonlinear transfer function gives the neural network a universal property: Given enough layers and neurons, the network can model any function within a certain accuracy. In a network with a linear transfer function we can only compute a linear function. A network with a linear transfer function of $n$ layers will always be equivalent to a network with only one layer: linear functions can always be concatenated.\\
 Whenever the function that we are trying to model isn't a linear function, it is useful to use a nonlinear transfer function.
 Examples include image classification or speech recognition.
 \subsection*{b}
@@ -30,7 +34,41 @@ region and 8 or -8 if the point is in the middle. This goes analogously for the 
 \subsection*{d}
 The first is deterministic and the second has a noise parameter and can return different states for set parameters and a given
 input.
+
+
 \section*{2.2}
+\subsection*{a}
+\begin{figure}[h]
+\centering
+ \includegraphics[width=\textwidth]{./2_2_a.png}
+\caption{Plot where Y=1 (blue) and Y=0 (gold).}
+\end{figure}
+
+
+\subsection*{b}
+\begin{figure}[h]
+\centering
+ \includegraphics[width=\textwidth]{./2_2_b.png}
+\caption{Classification performance for different alphas.}
+\end{figure}
+
+\subsection*{c}
+Best weight vector is .
+
+\subsection*{d}
+\begin{figure}[h]
+\centering
+ \includegraphics[width=\textwidth]{./2_2_d.png}
+\caption{Classified data points. Blue = correctly classified, Gold = other data points, Pink = weight.}
+\end{figure}
+
+\subsection*{e}
+\begin{figure}[h]
+\centering
+ \includegraphics[width=\textwidth]{./2_2_a.png}
+\caption{Plot where Y=1 (blue) and Y=0 (gold).}
+\end{figure}
+
 \section*{2.3}
 \subsection*{a}
 A MLP could decide between a horizontal and a vertical edge, whereas a perceptionist neuron would either be able to differ between
