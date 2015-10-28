@@ -66,14 +66,14 @@ bestweight = 0
 for weightnumber in range(len(classificationperformances)):
    if classificationperformances[bestweight] < classificationperformances[weightnumber]:
       bestweight = weightnumber
-#print classificationperformances[bestweight]
+print "weights[bestweight] =",weights[:,bestweight],"value =",classificationperformances[bestweight]
 #print "wtx", wtx[bestweight].shape, "\n", wtx[bestweight]
 
 #Now vary theta member [-3,3] and pick the value of theta giving the best performance.
 #create all the thresholds
 maxpositivethreshold = 3.0
 maxnegativethreshold = -3.0
-numberofsamplethresholds = 100
+numberofsamplethresholds = 999
 thresholds = numpy.linspace(maxnegativethreshold, maxpositivethreshold, numberofsamplethresholds)
 #print thresholds
 
