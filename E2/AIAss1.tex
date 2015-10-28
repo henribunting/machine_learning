@@ -20,6 +20,18 @@ Consider a simple neural network with two input neurons that can both either be 
   w_2 \leq 0\\
   w_1 + w_2 > 0\\
 \end{align*}
+
+\begin{tabular}{ l | l | l | l | l | l | l | l | l }
+$w_0 $ & &   &   &   &   &  & 1.5 \\
+$w_1 $ & & 0 & 1 & 0 & 1 &  & 1  \\
+$w_2 $ & & 0 & 0 & 1 & 1 &  & 1  \\ \hline
+0 0  & - & - & - & - & - &  & -  \\
+0 1  & - & - & - & + & + &  & -  \\
+1 0  & - & - & + & - & + &  & -  \\
+1 1  & + & - & + & + & + &  & +\\ \hline
+\end{tabular} \\
+	
+
 which is impossible. We can easily however create the network with a bias, if we have the weights $w = (1, 1)$ and the bias
 $\theta = \frac{3}{2}$. Then $sgn(w^Tx - \theta)$ would give us AND.
 \subsection*{c}
